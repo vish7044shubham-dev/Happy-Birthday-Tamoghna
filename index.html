@@ -1,0 +1,3006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Happy Birthday Tamoghna ❤️
+    </title>
+
+
+    <!-- ==================================================
+         GOOGLE FONTS
+    =================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==================================================
+         CSS
+    =================================================== -->
+
+    <style>
+
+        /* ==================================================
+           RESET
+        =================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            width: 100%;
+
+            min-height: 100vh;
+
+            font-family: "Poppins", sans-serif;
+
+            background: #fff7fa;
+
+            color: #4e2635;
+
+            overflow-x: hidden;
+        }
+
+
+        button,
+        a {
+            font-family: inherit;
+        }
+
+
+        /* ==================================================
+           VARIABLES
+        =================================================== */
+
+        :root {
+
+            --pink: #ff5d88;
+
+            --dark-pink: #8b294b;
+
+            --light-pink: #ffe3ec;
+
+            --cream: #fff8f5;
+
+            --gold: #ffd18c;
+
+            --dark: #170b19;
+
+            --white: #ffffff;
+
+        }
+
+
+        /* ==================================================
+           CUSTOM SCROLLBAR
+        =================================================== */
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+
+        ::-webkit-scrollbar-track {
+            background: #fff1f5;
+        }
+
+
+        ::-webkit-scrollbar-thumb {
+            background: #c95a7c;
+            border-radius: 20px;
+        }
+
+
+        /* ==================================================
+           HERO SECTION
+        =================================================== */
+
+        .hero {
+
+            position: relative;
+
+            width: 100%;
+
+            height: 100vh;
+
+            min-height: 650px;
+
+            overflow: hidden;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(9, 8, 30, 0.18),
+                    rgba(9, 8, 30, 0.35)
+                ),
+
+                url("birthday-bg.png");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-repeat: no-repeat;
+        }
+
+
+        /* Dark cinematic gradient */
+
+        .hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 45%,
+                    transparent 10%,
+                    rgba(0, 0, 0, 0.15) 50%,
+                    rgba(0, 0, 0, 0.45) 100%
+                );
+
+            z-index: 1;
+
+            pointer-events: none;
+        }
+
+
+        /* ==================================================
+           STARS
+        =================================================== */
+
+        .stars {
+
+            position: absolute;
+
+            inset: 0;
+
+            z-index: 1;
+
+            pointer-events: none;
+        }
+
+
+        .star {
+
+            position: absolute;
+
+            width: 3px;
+
+            height: 3px;
+
+            border-radius: 50%;
+
+            background: white;
+
+            box-shadow:
+                0 0 8px white;
+
+            animation:
+                twinkle
+                2s
+                infinite
+                alternate;
+        }
+
+
+        @keyframes twinkle {
+
+            from {
+                opacity: 0.2;
+                transform: scale(0.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1.4);
+            }
+
+        }
+
+
+        /* ==================================================
+           HERO CONTENT
+        =================================================== */
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 10;
+
+            width: 100%;
+
+            max-width: 1100px;
+
+            padding: 30px;
+
+            text-align: center;
+
+            pointer-events: none;
+        }
+
+
+        .small-date {
+
+            font-size: 14px;
+
+            letter-spacing: 5px;
+
+            text-transform: uppercase;
+
+            color: #ffd8e5;
+
+            margin-bottom: 15px;
+
+            text-shadow:
+                0 0 10px rgba(255, 100, 140, 0.8);
+        }
+
+
+        .hero-title {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                clamp(
+                    55px,
+                    9vw,
+                    125px
+                );
+
+            line-height: 0.82;
+
+            font-weight: 600;
+
+            color: #ffd39b;
+
+            text-shadow:
+
+                0 0 5px #ffbd70,
+
+                0 0 20px #ff7395,
+
+                0 0 45px #ff547f;
+
+            opacity: 0;
+
+            transform: scale(0.5);
+
+            transition:
+                opacity 1.2s ease,
+                transform 1.2s cubic-bezier(
+                    .17,
+                    .89,
+                    .32,
+                    1.25
+                );
+        }
+
+
+        .hero-title.show {
+
+            opacity: 1;
+
+            transform: scale(1);
+        }
+
+
+        .hero-name {
+
+            margin-top: 22px;
+
+            font-size:
+                clamp(
+                    18px,
+                    3vw,
+                    30px
+                );
+
+            letter-spacing: 8px;
+
+            color: white;
+
+            text-shadow:
+                0 0 15px #ff6e91;
+
+            opacity: 0;
+
+            transform: translateY(20px);
+
+            transition:
+                opacity 1s ease 0.4s,
+                transform 1s ease 0.4s;
+        }
+
+
+        .hero-name.show {
+
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+
+        /* ==================================================
+           SVG ANIMATION
+        =================================================== */
+
+        .animation-svg {
+
+            position: absolute;
+
+            inset: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            z-index: 7;
+
+            pointer-events: none;
+
+            overflow: visible;
+        }
+
+
+        /* ==================================================
+           BOW
+        =================================================== */
+
+        .bow {
+
+            fill: none;
+
+            stroke: #ffb267;
+
+            stroke-width: 9;
+
+            stroke-linecap: round;
+
+            filter:
+                drop-shadow(
+                    0 0 7px
+                    rgba(255, 170, 100, .9)
+                );
+        }
+
+
+        /* ==================================================
+           BOW STRING
+        =================================================== */
+
+        .bow-string {
+
+            fill: none;
+
+            stroke: #fff0dc;
+
+            stroke-width: 3;
+
+            stroke-linecap: round;
+
+            filter:
+                drop-shadow(
+                    0 0 6px
+                    rgba(255, 255, 255, .9)
+                );
+        }
+
+
+        /* ==================================================
+           ARROW
+        =================================================== */
+
+        .arrow {
+
+            transform-box: fill-box;
+
+            transform-origin: left center;
+
+            filter:
+
+                drop-shadow(
+                    0 0 5px
+                    rgba(255, 100, 150, .9)
+                );
+        }
+
+
+        .arrow-shaft {
+
+            stroke: #fff;
+
+            stroke-width: 5;
+
+            stroke-linecap: round;
+        }
+
+
+        .arrow-head {
+
+            fill: #ff557e;
+        }
+
+
+        .arrow-feather {
+
+            fill: #ffdce7;
+        }
+
+
+        /* ==================================================
+           ARROW SHOOT
+        =================================================== */
+
+        .arrow.shooting {
+
+            animation:
+
+                shootArrow
+                1.65s
+                cubic-bezier(
+                    .1,
+                    .75,
+                    .2,
+                    1
+                )
+                forwards;
+        }
+
+
+        @keyframes shootArrow {
+
+            0% {
+
+                transform:
+                    translate(
+                        0px,
+                        0px
+                    )
+                    rotate(0deg);
+
+            }
+
+
+            10% {
+
+                transform:
+                    translate(
+                        15px,
+                        -3px
+                    )
+                    rotate(-1deg);
+
+            }
+
+
+            100% {
+
+                transform:
+                    translate(
+                        var(--arrow-distance),
+                        var(--arrow-height)
+                    )
+                    rotate(
+                        var(--arrow-angle)
+                    );
+
+            }
+
+        }
+
+
+        /* ==================================================
+           TARGET HEART
+        =================================================== */
+
+        .target {
+
+            position: absolute;
+
+            z-index: 9;
+
+            right: 13%;
+
+            top: 38%;
+
+            width: 95px;
+
+            height: 95px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 78px;
+
+            opacity: 1;
+
+            filter:
+                drop-shadow(
+                    0 0 10px #ff5e83
+                );
+
+            transition:
+                transform .3s ease;
+        }
+
+
+        .target.hit {
+
+            animation:
+
+                heartHit
+                .8s
+                cubic-bezier(
+                    .17,
+                    .89,
+                    .32,
+                    1.3
+                );
+        }
+
+
+        @keyframes heartHit {
+
+            0% {
+
+                transform:
+                    scale(1);
+
+            }
+
+
+            30% {
+
+                transform:
+                    scale(1.6)
+                    rotate(-8deg);
+
+            }
+
+
+            55% {
+
+                transform:
+                    scale(.75)
+                    rotate(8deg);
+
+            }
+
+
+            75% {
+
+                transform:
+                    scale(1.3)
+                    rotate(-4deg);
+
+            }
+
+
+            100% {
+
+                transform:
+                    scale(1.1);
+
+            }
+
+        }
+
+
+        /* ==================================================
+           SHOOT BUTTON
+        =================================================== */
+
+        .shoot-button {
+
+            position: absolute;
+
+            z-index: 30;
+
+            bottom: 45px;
+
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            padding:
+                15px
+                32px;
+
+            border: 1px solid
+                rgba(255,255,255,.3);
+
+            border-radius: 50px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff638a,
+                    #a82d57
+                );
+
+            color: white;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            box-shadow:
+
+                0 10px 35px
+                rgba(255,70,120,.35);
+
+            transition:
+                .3s ease;
+        }
+
+
+        .shoot-button:hover {
+
+            transform:
+                translateX(-50%)
+                translateY(-4px)
+                scale(1.05);
+
+            box-shadow:
+
+                0 15px 45px
+                rgba(255,70,120,.55);
+        }
+
+
+        .shoot-button:active {
+
+            transform:
+                translateX(-50%)
+                scale(.95);
+        }
+
+
+        .shoot-button.hide {
+
+            opacity: 0;
+
+            pointer-events: none;
+        }
+
+
+        /* ==================================================
+           SCROLL INDICATOR
+        =================================================== */
+
+        .scroll-down {
+
+            position: absolute;
+
+            bottom: 15px;
+
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            z-index: 5;
+
+            color:
+                rgba(255,255,255,.7);
+
+            font-size: 11px;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* ==================================================
+           SPARKLES
+        =================================================== */
+
+        .sparkle {
+
+            position: fixed;
+
+            width: 7px;
+
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #fff;
+
+            box-shadow:
+
+                0 0 8px #fff,
+
+                0 0 18px #ff6c91,
+
+                0 0 30px #ff6c91;
+
+            z-index: 100;
+
+            pointer-events: none;
+
+            animation:
+                sparkleFly
+                1.5s
+                ease-out
+                forwards;
+        }
+
+
+        @keyframes sparkleFly {
+
+            0% {
+
+                opacity: 1;
+
+                transform:
+                    translate(
+                        0,
+                        0
+                    )
+                    scale(1);
+            }
+
+
+            100% {
+
+                opacity: 0;
+
+                transform:
+                    translate(
+                        var(--x),
+                        var(--y)
+                    )
+                    scale(0);
+            }
+
+        }
+
+
+        /* ==================================================
+           CONFETTI
+        =================================================== */
+
+        .confetti {
+
+            position: fixed;
+
+            top: -20px;
+
+            width: 10px;
+
+            height: 16px;
+
+            z-index: 200;
+
+            pointer-events: none;
+
+            animation:
+                confettiFall
+                var(--duration)
+                linear
+                forwards;
+        }
+
+
+        @keyframes confettiFall {
+
+            to {
+
+                transform:
+                    translateY(110vh)
+                    rotate(
+                        720deg
+                    );
+
+                opacity: 0;
+            }
+
+        }
+
+
+        /* ==================================================
+           GENERAL SECTION
+        =================================================== */
+
+        .section {
+
+            position: relative;
+
+            width: 100%;
+
+            min-height: 100vh;
+
+            padding:
+                100px 7%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            color: #522635;
+
+            background:
+                #fff8fa;
+        }
+
+
+        .section:nth-child(even) {
+
+            background:
+                #fff0f5;
+        }
+
+
+        .section-title {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                clamp(
+                    50px,
+                    7vw,
+                    90px
+                );
+
+            line-height: .9;
+
+            color:
+                #862e4e;
+
+            margin-bottom: 20px;
+        }
+
+
+        .section-subtitle {
+
+            max-width: 700px;
+
+            line-height: 1.8;
+
+            color:
+                #795666;
+
+            font-size: 17px;
+        }
+
+
+        /* ==================================================
+           BIRTHDAY DATE CARD
+        =================================================== */
+
+        .date-card {
+
+            width: 100%;
+
+            max-width: 850px;
+
+            margin-top: 55px;
+
+            padding: 55px 30px;
+
+            border-radius: 35px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    #ffffff,
+                    #fff0f5
+                );
+
+            border:
+                1px solid #f3d3df;
+
+            box-shadow:
+
+                0 25px 70px
+                rgba(
+                    115,
+                    38,
+                    65,
+                    .12
+                );
+        }
+
+
+        .date-number {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                clamp(
+                    55px,
+                    9vw,
+                    110px
+                );
+
+            color:
+                #9b3c5d;
+
+            font-weight: 600;
+        }
+
+
+        .date-text {
+
+            margin-top: 10px;
+
+            font-size: 16px;
+
+            letter-spacing: 3px;
+
+            text-transform:
+                uppercase;
+
+            color:
+                #a75b74;
+        }
+
+
+        /* ==================================================
+           MEMORY GRID
+        =================================================== */
+
+        .memory-grid {
+
+            width: 100%;
+
+            max-width: 1100px;
+
+            margin-top: 55px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .memory-card {
+
+            min-height: 300px;
+
+            padding: 30px;
+
+            border-radius: 28px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: flex-end;
+
+            text-align: left;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #ffd0df,
+                    #fff
+                );
+
+            box-shadow:
+
+                0 18px 45px
+                rgba(
+                    100,
+                    30,
+                    60,
+                    .12
+                );
+
+            transition:
+                .35s ease;
+        }
+.memory-card:nth-child(1) {
+
+            background-image: url(your-smile.jpeg);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; 
+        }
+
+        .memory-card:nth-child(2) {
+
+            background-image: url(your-vibe.jpeg);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; 
+        }
+
+
+        .memory-card:nth-child(3) {
+
+             background-image: url(our-talks.jpeg);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        .memory-card:nth-child(4) {
+
+             background-image: url(your-heart.jpeg);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        .memory-card:nth-child(5) {
+
+             background-image: url(our-memories.jpeg);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        .memory-card:nth-child(6) {
+
+             background-image: url(simply-you.jpeg);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        .memory-card:hover {
+
+            transform:
+                translateY(-10px);
+
+            box-shadow:
+
+                0 25px 55px
+                rgba(
+                    100,
+                    30,
+                    60,
+                    .18
+                );
+        }
+
+
+        .memory-icon {
+
+            font-size: 45px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .memory-card h3 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 34px;
+
+            color:
+                #fa4685;
+
+            margin-bottom: 10px;
+        }
+
+
+        .memory-card p {
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            color:
+                #902164;
+        }
+
+
+        /* ==================================================
+           REASONS
+        =================================================== */
+
+        .reason-grid {
+
+            width: 100%;
+
+            max-width: 950px;
+
+            margin-top: 55px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .reason {
+
+            padding: 30px;
+
+            border-radius: 22px;
+
+            text-align: left;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    .75
+                );
+
+            border:
+                1px solid #f0d4df;
+
+            transition:
+                .3s;
+        }
+
+
+        .reason:hover {
+
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(
+                    100,
+                    30,
+                    60,
+                    .1
+                );
+        }
+
+
+        .reason h3 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 30px;
+
+            color:
+                #8a3150;
+
+            margin-bottom: 8px;
+        }
+
+
+        .reason p {
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+        /* ==================================================
+           LOVE LETTER
+        =================================================== */
+
+        .letter-wrapper {
+
+            width: 100%;
+
+            max-width: 850px;
+
+            margin-top: 50px;
+
+            padding: 55px;
+
+            border-radius: 30px;
+
+            background:
+                #ffffff;
+
+            box-shadow:
+
+                0 25px 70px
+                rgba(
+                    90,
+                    25,
+                    50,
+                    .14
+                );
+
+            text-align: left;
+
+            line-height: 2;
+        }
+
+
+        .letter-top {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 35px;
+
+            color:
+                #8d3151;
+
+            margin-bottom: 25px;
+        }
+
+
+        .letter-text {
+
+            font-size: 16px;
+
+            color:
+                #674653;
+        }
+
+
+        .signature {
+
+            margin-top: 30px;
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 32px;
+
+            color:
+                #8d3151;
+        }
+
+
+        /* ==================================================
+           FINAL SURPRISE
+        =================================================== */
+
+        .surprise-section {
+
+            background:
+
+                radial-gradient(
+                    circle at center,
+                    #ffe0ea,
+                    #fff7fa 60%
+                );
+        }
+
+
+        .surprise-button {
+
+            margin-top: 40px;
+
+            padding:
+                17px 35px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            background:
+                #8c3150;
+
+            color: white;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+            transition:
+                .3s;
+
+            box-shadow:
+
+                0 12px 35px
+                rgba(
+                    140,
+                    49,
+                    80,
+                    .25
+                );
+        }
+
+
+        .surprise-button:hover {
+
+            transform:
+                translateY(-4px);
+
+            background:
+                #6e243e;
+        }
+
+
+        .final-message {
+
+            max-width: 750px;
+
+            margin-top: 40px;
+
+            padding: 45px;
+
+            border-radius: 30px;
+
+            background:
+                white;
+
+            box-shadow:
+
+                0 25px 70px
+                rgba(
+                    100,
+                    30,
+                    60,
+                    .14
+                );
+
+            opacity: 0;
+
+            transform:
+                scale(.8);
+
+            pointer-events: none;
+
+            transition:
+                .7s ease;
+        }
+
+
+        .final-message.show {
+
+            opacity: 1;
+
+            transform:
+                scale(1);
+
+            pointer-events:
+                auto;
+        }
+
+
+        .final-message h2 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                clamp(
+                    45px,
+                    7vw,
+                    75px
+                );
+
+            color:
+                #8c3150;
+        }
+
+
+        .final-message p {
+
+            margin-top: 20px;
+
+            line-height: 1.9;
+
+            color:
+                #674653;
+        }
+
+
+        /* ==================================================
+           FOOTER
+        =================================================== */
+
+        footer {
+
+            padding:
+                30px 20px;
+
+            text-align: center;
+
+            background:
+                #45182c;
+
+            color:
+                #ffdce7;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+
+        /* ==================================================
+           RESPONSIVE
+        =================================================== */
+
+        @media (max-width: 900px) {
+
+            .memory-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .target {
+
+                right: 8%;
+
+                top: 36%;
+            }
+
+
+            .hero-title {
+
+                font-size:
+                    clamp(
+                        55px,
+                        12vw,
+                        90px
+                    );
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .hero {
+
+                min-height:
+                    700px;
+
+                background-position:
+                    62% center;
+            }
+
+
+            .small-date {
+
+                font-size: 10px;
+
+                letter-spacing: 3px;
+            }
+
+
+            .hero-title {
+
+                font-size:
+                    55px;
+            }
+
+
+            .hero-name {
+
+                font-size: 15px;
+
+                letter-spacing: 5px;
+            }
+
+
+            .target {
+
+                right: 5%;
+
+                top: 29%;
+
+                width: 70px;
+
+                height: 70px;
+
+                font-size: 55px;
+            }
+
+
+            .shoot-button {
+
+                bottom: 35px;
+
+                padding:
+                    14px 25px;
+
+                font-size: 14px;
+            }
+
+
+            .memory-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .reason-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .letter-wrapper {
+
+                padding:
+                    30px 22px;
+            }
+
+
+            .date-card {
+
+                padding:
+                    40px 20px;
+            }
+
+        }
+
+
+        @media (max-width: 420px) {
+
+            .hero-title {
+
+                font-size:
+                    48px;
+            }
+
+
+            .target {
+
+                top: 27%;
+
+                right: 3%;
+            }
+
+
+            .section {
+
+                padding:
+                    80px 5%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     HERO
+======================================================= -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+
+    <!-- ==================================================
+         STARS
+    =================================================== -->
+
+    <div
+        class="stars"
+        id="stars"
+    ></div>
+
+
+    <!-- ==================================================
+         SVG BOW + ARROW
+    =================================================== -->
+
+    <svg
+        class="animation-svg"
+        id="animationSvg"
+        viewBox="0 0 1200 700"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+
+
+        <!-- ==================================================
+             BOW
+        =================================================== -->
+
+        <path
+            class="bow"
+            d="
+                M 175 470
+                Q 70 350 175 230
+            "
+        />
+
+
+        <!-- ==================================================
+             BOW STRING
+        =================================================== -->
+
+        <path
+            class="bow-string"
+            d="
+                M 175 230
+                L 175 350
+                L 175 470
+            "
+        />
+
+
+        <!-- ==================================================
+             ARROW
+
+             IMPORTANT:
+             Arrow starts at EXACTLY 175,350.
+
+             That is the center point of the bow string.
+        =================================================== -->
+
+        <g
+            id="arrow"
+            class="arrow"
+            transform="translate(175 350)"
+        >
+
+
+            <!-- Arrow shaft -->
+
+            <line
+                class="arrow-shaft"
+                x1="0"
+                y1="0"
+                x2="240"
+                y2="0"
+            />
+
+
+            <!-- Arrow head -->
+
+            <polygon
+                class="arrow-head"
+                points="
+                    265,0
+                    230,-14
+                    230,14
+                "
+            />
+
+
+            <!-- Arrow feathers -->
+
+            <polygon
+                class="arrow-feather"
+                points="
+                    0,0
+                    -28,-14
+                    -12,0
+                    -28,14
+                "
+            />
+
+
+        </g>
+
+    </svg>
+
+
+    <!-- ==================================================
+         TARGET HEART
+    =================================================== -->
+
+    <div
+        class="target"
+        id="target"
+    >
+
+        ❤️
+
+    </div>
+
+
+    <!-- ==================================================
+         HERO TEXT
+    =================================================== -->
+
+    <div
+        class="hero-content"
+        id="heroContent"
+    >
+
+
+        <div class="small-date">
+
+            04 • OCTOBER • 2006
+
+        </div>
+
+
+        <h1
+            class="hero-title"
+            id="heroTitle"
+        >
+
+            Happy
+            <br>
+            Birthday
+
+        </h1>
+
+
+        <div
+            class="hero-name"
+            id="heroName"
+        >
+
+            TAMOGHNA ❤️
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ==================================================
+         SHOOT BUTTON
+    =================================================== -->
+
+    <button
+        class="shoot-button"
+        id="shootButton"
+    >
+
+        🏹 Shoot the Arrow
+
+    </button>
+
+
+    <div class="scroll-down">
+
+        Scroll ↓
+
+    </div>
+
+
+</section>
+
+
+<!-- ======================================================
+     BIRTHDAY SECTION
+======================================================= -->
+
+<section
+    class="section"
+    id="birthday"
+>
+
+
+    <h2 class="section-title">
+
+        Your Special Day ✨
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        Some dates are just dates.
+
+        <br>
+
+        And then there is this one —
+        the day someone very special
+        came into this world.
+
+    </p>
+
+
+    <div class="date-card">
+
+
+        <div class="date-number">
+
+            04 • 10 • 2006
+
+        </div>
+
+
+        <div class="date-text">
+
+            The day My Cutiepie was born ❤️
+
+        </div>
+
+
+        <p
+            style="
+                margin-top:25px;
+                line-height:1.9;
+            "
+        >
+
+            Today isn't just another day.
+
+            <br>
+
+            Today is a reminder of how
+            beautiful it is that you exist.
+
+            <br><br>
+
+            Happy Birthday, Puklu! 🎂
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- ======================================================
+     MEMORIES SECTION
+======================================================= -->
+
+<section
+    class="section"
+    id="memories"
+>
+
+
+    <h2 class="section-title">
+
+        Little Things I Love ❤️
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        Dhyann se padhna sona text thoda sa light hai.
+        AI se likhwaye hai😁.
+
+    </p>
+
+
+    <div class="memory-grid">
+
+
+        <div class="memory-card">
+
+            <div class="memory-icon">
+                🌷
+            </div>
+
+            <h3>
+                Your Smile
+            </h3>
+
+            <p>
+
+                The kind of smile that can
+                instantly make an ordinary
+                moment feel special.
+
+            </p>
+
+        </div>
+
+
+        <div class="memory-card">
+
+            <div class="memory-icon">
+                ✨
+            </div>
+
+            <h3>
+                Your Vibe
+            </h3>
+
+            <p>
+
+                There is something about you
+                that makes every moment
+                more memorable.
+
+            </p>
+
+        </div>
+
+
+        <div class="memory-card">
+
+            <div class="memory-icon">
+                🌙
+            </div>
+
+            <h3>
+                Our Talks
+            </h3>
+
+            <p>
+
+                Even the most random
+                conversations somehow become
+                beautiful memories.
+
+            </p>
+
+        </div>
+
+
+        <div class="memory-card">
+
+            <div class="memory-icon">
+                🫶
+            </div>
+
+            <h3>
+                Your Heart
+            </h3>
+
+            <p>
+
+                Your kindness and the little
+                things you do mean more than
+                you probably realize.
+
+            </p>
+
+        </div>
+
+
+        <div class="memory-card">
+
+            <div class="memory-icon">
+                📸
+            </div>
+
+            <h3>
+                Our Memories
+            </h3>
+
+            <p>
+
+                Every little moment becomes
+                another page in a story worth
+                remembering.
+
+            </p>
+
+        </div>
+
+
+        <div class="memory-card">
+
+            <div class="memory-icon">
+                💗
+            </div>
+
+            <h3>
+                Simply You
+            </h3>
+
+            <p>
+
+                No special reason needed.
+
+                <br>
+
+                You being you is enough.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- ======================================================
+     REASONS SECTION
+======================================================= -->
+
+<section
+    class="section"
+    id="reasons"
+>
+
+
+    <h2 class="section-title">
+
+        Why You're Special 💕
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        A few words for someone who
+        deserves many more.
+
+    </p>
+
+
+    <div class="reason-grid">
+
+
+        <div class="reason">
+
+            <h3>
+                🌸 Your Chatpataness
+            </h3>
+
+            <p>
+
+                Your Chatpata harkat makes me more happy.
+
+            </p>
+
+        </div>
+
+
+        <div class="reason">
+
+            <h3>
+                💫 Your Kindness
+            </h3>
+
+            <p>
+
+                The little things you do can
+                mean much more than you realize.
+
+            </p>
+
+        </div>
+
+
+        <div class="reason">
+
+            <h3>
+                🎀 Your Gussa
+            </h3>
+
+            <p>
+
+                My favorite part is when I rage-bait you and you actually get mad.” 😂❤️
+
+            </p>
+
+        </div>
+
+
+        <div class="reason">
+
+            <h3>
+                ❤️ Your Smile
+            </h3>
+
+            <p>
+
+                One of those tiny things that
+                can instantly make my day better.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- ======================================================
+     LOVE LETTER
+======================================================= -->
+
+<section
+    class="section"
+    id="letter"
+>
+
+
+    <h2 class="section-title">
+
+        A Letter For You 💌
+
+    </h2>
+
+
+    <div class="letter-wrapper">
+
+
+        <div class="letter-top">
+
+            Dear Baby,
+
+        </div>
+
+
+        <div class="letter-text">
+
+            Happy Birthday! ❤️
+
+            <br>
+
+            I wanted to make something a little
+            different for your birthday.
+
+            Something that isn't just a normal
+            birthday message.
+
+            <br>
+
+            So I made this little corner of the
+            internet especially for you.
+
+            <br>
+
+            When we first met, you came wearing a white kurti and jeans. At that time, I thought, “She looks so simple and innocent.” But when I got to see your chatpata side, your little crazy habits, and especially your gussa, I somehow fell even more in love with you. ❤️
+<br><br>
+It has been 6 months and 2 days since we started our relationship, and honestly, I want to spend my whole life with you. I never imagined that I would end up loving you this much.
+<br><br>
+You have almost every quality that I could ever want in a perfect girl — maturity, love, care, kindness,beautiful, understanding (thoda kam 😂), and so much more. I could keep writing about all the things I love about you, but the page would end before my words ever do.
+<br><br>
+Last thing, baby…
+<br>
+I LOVE YOU. ❤️
+            <br><br>
+
+            I hope you achieve the things you
+            dream about and always remember
+            how special you are.
+
+            <br>
+
+            Keep smiling.
+
+            Keep being yourself.
+
+            And keep making the world a little
+            brighter just by being in it.
+
+        </div>
+
+
+        <div class="signature">
+
+            With lots of love, Shubham❤️
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- ======================================================
+     FINAL SURPRISE
+======================================================= -->
+
+<section
+    class="section surprise-section"
+    id="surprise"
+>
+
+
+    <h2 class="section-title">
+
+        One Last Surprise 🎁
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        You've reached the end...
+
+        <br>
+
+        but there's still one thing left.
+
+    </p>
+
+
+    <button
+        class="surprise-button"
+        id="surpriseButton"
+    >
+
+        Open My Final Message ❤️
+
+    </button>
+
+
+    <div
+        class="final-message"
+        id="finalMessage"
+    >
+
+
+        <h2>
+
+            Happy Birthday,
+            Tamoghna! 🎂❤️
+
+        </h2>
+
+
+        <p>
+
+            May this year bring you
+            countless beautiful moments.
+
+            <br><br>
+
+            May you laugh louder,
+            dream bigger,
+            travel farther,
+            and find happiness in
+            the smallest things.
+            Aise hi humesha rehna mere sath baby❤️.
+
+            <br><br>
+
+            Today is your day.
+
+            <br>
+
+            Enjoy every second of it. ❤️
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- ======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+    Made especially for Tamoghna by one Handsome boy ❤️
+
+    <br>
+
+    04 • 10 • 2006
+
+</footer>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+
+/* ======================================================
+   ELEMENTS
+====================================================== */
+
+const hero =
+    document.querySelector(".hero");
+
+
+const arrow =
+    document.getElementById(
+        "arrow"
+    );
+
+
+const target =
+    document.getElementById(
+        "target"
+    );
+
+
+const shootButton =
+    document.getElementById(
+        "shootButton"
+    );
+
+
+const heroTitle =
+    document.getElementById(
+        "heroTitle"
+    );
+
+
+const heroName =
+    document.getElementById(
+        "heroName"
+    );
+
+
+const surpriseButton =
+    document.getElementById(
+        "surpriseButton"
+    );
+
+
+const finalMessage =
+    document.getElementById(
+        "finalMessage"
+    );
+
+
+const stars =
+    document.getElementById(
+        "stars"
+    );
+
+
+/* ======================================================
+   CREATE STARS
+====================================================== */
+
+function createStars() {
+
+    for (
+        let i = 0;
+        i < 90;
+        i++
+    ) {
+
+        const star =
+            document.createElement(
+                "div"
+            );
+
+
+        star.className =
+            "star";
+
+
+        star.style.left =
+            Math.random() * 100 + "%";
+
+
+        star.style.top =
+            Math.random() * 100 + "%";
+
+
+        star.style.animationDelay =
+            Math.random() * 3 + "s";
+
+
+        star.style.animationDuration =
+            1 +
+            Math.random() * 3 +
+            "s";
+
+
+        stars.appendChild(
+            star
+        );
+
+    }
+
+}
+
+
+createStars();
+
+
+/* ======================================================
+   CALCULATE ARROW DISTANCE
+====================================================== */
+
+function calculateArrowPosition() {
+
+    /*
+        SVG coordinate system:
+
+        width  = 1200
+        height = 700
+
+        Arrow starting point:
+
+        x = 175
+        y = 350
+
+        Target is converted from
+        screen coordinates to SVG
+        coordinates.
+    */
+
+
+    const svg =
+        document.getElementById(
+            "animationSvg"
+        );
+
+
+    const svgRect =
+        svg.getBoundingClientRect();
+
+
+    const targetRect =
+        target.getBoundingClientRect();
+
+
+    /*
+        Center of target
+    */
+
+    const targetX =
+        targetRect.left +
+        targetRect.width / 2;
+
+
+    const targetY =
+        targetRect.top +
+        targetRect.height / 2;
+
+
+    /*
+        Convert screen coordinates
+        into SVG coordinates.
+    */
+
+    const scaleX =
+        1200 /
+        svgRect.width;
+
+
+    const scaleY =
+        700 /
+        svgRect.height;
+
+
+    const svgTargetX =
+        (targetX -
+            svgRect.left) *
+        scaleX;
+
+
+    const svgTargetY =
+        (targetY -
+            svgRect.top) *
+        scaleY;
+
+
+    /*
+        Arrow starts here.
+    */
+
+    const startX =
+        175;
+
+
+    const startY =
+        350;
+
+
+    /*
+        Calculate distance.
+    */
+
+    const dx =
+        svgTargetX -
+        startX;
+
+
+    const dy =
+        svgTargetY -
+        startY;
+
+
+    /*
+        Angle.
+    */
+
+    const angle =
+        Math.atan2(
+            dy,
+            dx
+        ) *
+        180 /
+        Math.PI;
+
+
+    /*
+        CSS transform values.
+    */
+
+    arrow.style.setProperty(
+        "--arrow-distance",
+        dx + "px"
+    );
+
+
+    arrow.style.setProperty(
+        "--arrow-height",
+        dy + "px"
+    );
+
+
+    arrow.style.setProperty(
+        "--arrow-angle",
+        angle + "deg"
+    );
+
+}
+
+
+/* ======================================================
+   SHOOT ARROW
+====================================================== */
+
+shootButton.addEventListener(
+    "click",
+    function () {
+
+
+        /*
+            Calculate target position
+            every time.
+
+            This makes it responsive.
+        */
+
+        calculateArrowPosition();
+
+
+        /*
+            Reset animation.
+        */
+
+        arrow.classList.remove(
+            "shooting"
+        );
+
+
+        target.classList.remove(
+            "hit"
+        );
+
+
+        heroTitle.classList.remove(
+            "show"
+        );
+
+
+        heroName.classList.remove(
+            "show"
+        );
+
+
+        /*
+            Force browser reflow.
+
+            This allows the same
+            animation to run again.
+        */
+
+        void arrow.offsetWidth;
+
+
+        /*
+            Start arrow.
+        */
+
+        arrow.classList.add(
+            "shooting"
+        );
+
+
+        /*
+            Disable button.
+        */
+
+        shootButton.disabled =
+            true;
+
+
+        shootButton.style.opacity =
+            "0.5";
+
+
+        /*
+            Arrow reaches target
+            around this point.
+        */
+
+        setTimeout(
+            function () {
+
+
+                /*
+                    Heart hit.
+                */
+
+                target.classList.add(
+                    "hit"
+                );
+
+
+                /*
+                    Create explosion.
+                */
+
+                createSparkles();
+
+
+                /*
+                    Birthday text.
+                */
+
+                setTimeout(
+                    function () {
+
+                        heroTitle.classList.add(
+                            "show"
+                        );
+
+
+                        heroName.classList.add(
+                            "show"
+                        );
+
+
+                        createConfetti();
+
+
+                    },
+                    250
+                );
+
+
+                /*
+                    Allow shoot again.
+                */
+
+                setTimeout(
+                    function () {
+
+                        shootButton.disabled =
+                            false;
+
+
+                        shootButton.style.opacity =
+                            "1";
+
+
+                    },
+                    1200
+                );
+
+
+            },
+            1350
+        );
+
+    }
+);
+
+
+/* ======================================================
+   SPARKLE EXPLOSION
+====================================================== */
+
+function createSparkles() {
+
+
+    const rect =
+        target.getBoundingClientRect();
+
+
+    const centerX =
+        rect.left +
+        rect.width / 2;
+
+
+    const centerY =
+        rect.top +
+        rect.height / 2;
+
+
+    for (
+        let i = 0;
+        i < 45;
+        i++
+    ) {
+
+
+        const sparkle =
+            document.createElement(
+                "div"
+            );
+
+
+        sparkle.className =
+            "sparkle";
+
+
+        sparkle.style.left =
+            centerX + "px";
+
+
+        sparkle.style.top =
+            centerY + "px";
+
+
+        const x =
+            (
+                Math.random() -
+                0.5
+            ) *
+            350;
+
+
+        const y =
+            (
+                Math.random() -
+                0.5
+            ) *
+            300;
+
+
+        sparkle.style.setProperty(
+            "--x",
+            x + "px"
+        );
+
+
+        sparkle.style.setProperty(
+            "--y",
+            y + "px"
+        );
+
+
+        document.body.appendChild(
+            sparkle
+        );
+
+
+        setTimeout(
+            function () {
+
+                sparkle.remove();
+
+            },
+            1600
+        );
+
+    }
+
+}
+
+
+/* ======================================================
+   CONFETTI
+====================================================== */
+
+function createConfetti() {
+
+
+    const pieces =
+        80;
+
+
+    const colors = [
+        "#ff5d88",
+        "#ffd18c",
+        "#ffffff",
+        "#ff9db8",
+        "#c88bff"
+    ];
+
+
+    for (
+        let i = 0;
+        i < pieces;
+        i++
+    ) {
+
+
+        const confetti =
+            document.createElement(
+                "div"
+            );
+
+
+        confetti.className =
+            "confetti";
+
+
+        confetti.style.left =
+            Math.random() * 100 +
+            "vw";
+
+
+        confetti.style.background =
+            colors[
+                Math.floor(
+                    Math.random() *
+                    colors.length
+                )
+            ];
+
+
+        confetti.style.transform =
+            `rotate(
+                ${Math.random() * 360}deg
+            )`;
+
+
+        confetti.style.setProperty(
+            "--duration",
+            2 +
+            Math.random() * 3 +
+            "s"
+        );
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(
+            function () {
+
+                confetti.remove();
+
+            },
+            5500
+        );
+
+    }
+
+}
+
+
+/* ======================================================
+   FINAL SURPRISE
+====================================================== */
+
+surpriseButton.addEventListener(
+    "click",
+    function () {
+
+
+        finalMessage.classList.add(
+            "show"
+        );
+
+
+        surpriseButton.style.display =
+            "none";
+
+
+        createConfetti();
+
+
+    }
+);
+
+
+/* ======================================================
+   WINDOW RESIZE
+
+   Recalculate arrow target if
+   the browser size changes.
+====================================================== */
+
+window.addEventListener(
+    "resize",
+    function () {
+
+        if (
+            arrow.classList.contains(
+                "shooting"
+            )
+        ) {
+
+            return;
+
+        }
+
+        calculateArrowPosition();
+
+    }
+);
+
+
+</script>
+
+
+</body>
+
+</html>
