@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Tamoghna ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{width:100%;min-height:100vh;font-family:"Poppins",sans-serif;background:#fff7fa;color:#4e2635;overflow-x:hidden}
+button{font-family:inherit}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#fff1f5}
+::-webkit-scrollbar-thumb{background:#c95a7c;border-radius:20px}
+
+/* HERO */
+.hero{position:relative;width:100%;height:100vh;height:100svh;min-height:650px;overflow:hidden;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(rgba(9,8,30,.18),rgba(9,8,30,.35)),url("birthday-bg.png") center/cover no-repeat,linear-gradient(160deg,#2a1033,#5a1d44 60%,#8b294b)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,transparent 10%,rgba(0,0,0,.15) 50%,rgba(0,0,0,.45) 100%);z-index:1;pointer-events:none}
+.stars{position:absolute;inset:0;z-index:1;pointer-events:none}
+.star{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;box-shadow:0 0 8px #fff;animation:twinkle 2s infinite alternate}
+@keyframes twinkle{from{opacity:.2;transform:scale(.7)}to{opacity:1;transform:scale(1.4)}}
+.hero-content{position:relative;z-index:10;width:100%;max-width:1100px;padding:30px;text-align:center;pointer-events:none}
+.small-date{font-size:14px;letter-spacing:5px;text-transform:uppercase;color:#ffd8e5;margin-bottom:15px;text-shadow:0 0 10px rgba(255,100,140,.8)}
+.hero-title{font-family:"Cormorant Garamond",serif;font-size:clamp(55px,9vw,125px);line-height:.82;font-weight:600;color:#ffd39b;
+  text-shadow:0 0 5px #ffbd70,0 0 20px #ff7395,0 0 45px #ff547f;opacity:0;transform:scale(.5);
+  transition:opacity 1.2s ease,transform 1.2s cubic-bezier(.17,.89,.32,1.25)}
+.hero-title.show{opacity:1;transform:scale(1)}
+.hero-name{margin-top:22px;font-size:clamp(18px,3vw,30px);letter-spacing:8px;color:#fff;text-shadow:0 0 15px #ff6e91;opacity:0;transform:translateY(20px);transition:opacity 1s ease .4s,transform 1s ease .4s}
+.hero-name.show{opacity:1;transform:translateY(0)}
+
+/* BOW + ARROW */
+.animation-svg{position:absolute;inset:0;width:100%;height:100%;z-index:7;pointer-events:none;overflow:visible}
+.bow{fill:none;stroke:#ffb267;stroke-width:9;stroke-linecap:round;filter:drop-shadow(0 0 7px rgba(255,170,100,.9))}
+.bow-string{fill:none;stroke:#fff0dc;stroke-width:3;stroke-linecap:round;filter:drop-shadow(0 0 6px rgba(255,255,255,.9))}
+.arrow{transform-box:fill-box;transform-origin:left center;filter:drop-shadow(0 0 5px rgba(255,100,150,.9))}
+.arrow-shaft{stroke:#fff;stroke-width:5;stroke-linecap:round}
+.arrow-head{fill:#ff557e}
+.arrow-feather{fill:#ffdce7}
+.arrow.shooting{animation:shootArrow 1.35s cubic-bezier(.1,.75,.2,1) forwards}
+@keyframes shootArrow{
+  0%{transform:translate(0,0) rotate(0deg)}
+  10%{transform:translate(-12px,0) rotate(0deg)}
+  100%{transform:translate(var(--arrow-x),var(--arrow-y)) rotate(var(--arrow-angle))}}
+
+.target{position:absolute;z-index:9;right:13%;top:38%;width:95px;height:95px;display:flex;align-items:center;justify-content:center;font-size:78px;filter:drop-shadow(0 0 10px #ff5e83)}
+.target.hit{animation:heartHit .8s cubic-bezier(.17,.89,.32,1.3)}
+@keyframes heartHit{0%{transform:scale(1)}30%{transform:scale(1.6) rotate(-8deg)}55%{transform:scale(.75) rotate(8deg)}75%{transform:scale(1.3) rotate(-4deg)}100%{transform:scale(1.1)}}
+
+.shoot-button{position:absolute;z-index:30;bottom:45px;left:50%;transform:translateX(-50%);padding:15px 32px;border:1px solid rgba(255,255,255,.3);border-radius:50px;
+  background:linear-gradient(135deg,#ff638a,#a82d57);color:#fff;font-size:16px;font-weight:600;cursor:pointer;box-shadow:0 10px 35px rgba(255,70,120,.35);transition:.3s ease}
+.shoot-button:hover:not(:disabled){transform:translateX(-50%) translateY(-4px) scale(1.05);box-shadow:0 15px 45px rgba(255,70,120,.55)}
+.shoot-button:active:not(:disabled){transform:translateX(-50%) scale(.95)}
+.shoot-button:disabled{opacity:.5;cursor:not-allowed}
+.scroll-down{position:absolute;bottom:15px;left:50%;transform:translateX(-50%);z-index:5;color:rgba(255,255,255,.7);font-size:11px;letter-spacing:3px;text-transform:uppercase}
+
+.sparkle{position:fixed;width:7px;height:7px;border-radius:50%;background:#fff;box-shadow:0 0 8px #fff,0 0 18px #ff6c91,0 0 30px #ff6c91;z-index:100;pointer-events:none;animation:sparkleFly 1.5s ease-out forwards}
+@keyframes sparkleFly{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(var(--x),var(--y)) scale(0)}}
+.confetti{position:fixed;top:-20px;width:10px;height:16px;z-index:200;pointer-events:none;animation:confettiFall var(--duration) linear forwards}
+@keyframes confettiFall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+
+/* SECTIONS */
+.section{position:relative;width:100%;min-height:100vh;padding:100px 7%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#522635;background:#fff8fa}
+.section:nth-child(even){background:#fff0f5}
+.section-title{font-family:"Cormorant Garamond",serif;font-size:clamp(50px,7vw,90px);line-height:.9;color:#862e4e;margin-bottom:20px}
+.section-subtitle{max-width:700px;line-height:1.8;color:#795666;font-size:17px}
+
+.date-card{width:100%;max-width:850px;margin-top:55px;padding:55px 30px;border-radius:35px;background:linear-gradient(145deg,#fff,#fff0f5);border:1px solid #f3d3df;box-shadow:0 25px 70px rgba(115,38,65,.12)}
+.date-number{font-family:"Cormorant Garamond",serif;font-size:clamp(55px,9vw,110px);color:#9b3c5d;font-weight:600}
+.date-text{margin-top:10px;font-size:16px;letter-spacing:3px;text-transform:uppercase;color:#a75b74}
+
+/* MEMORY CARDS */
+.memory-grid{width:100%;max-width:1100px;margin-top:55px;display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.memory-card{position:relative;min-height:300px;padding:30px;border-radius:28px;display:flex;flex-direction:column;justify-content:flex-end;text-align:left;overflow:hidden;
+  background:var(--img) var(--pos,center)/cover no-repeat,linear-gradient(145deg,#ffd0df,#fff);
+  box-shadow:0 18px 45px rgba(100,30,60,.12);transition:transform .35s ease,box-shadow .35s ease}
+.memory-card:nth-child(1){--img:url("your-smile.jpeg");--pos:center 40%}
+.memory-card:nth-child(2){--img:url("your-vibe.jpeg");--pos:center 30%}
+.memory-card:nth-child(3){--img:url("our-talks.jpeg");--pos:center 40%}
+.memory-card:nth-child(4){--img:url("your-heart.jpeg");--pos:center}
+.memory-card:nth-child(5){--img:url("our-memories.jpeg");--pos:center 30%}
+.memory-card:nth-child(6){--img:url("simply-you.jpeg");--pos:center 25%}
+.memory-card::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(90,15,50,.88),rgba(90,15,50,.35));opacity:0;transition:opacity .35s ease}
+.memory-card>*{position:relative;z-index:1;opacity:0;transform:translateY(14px);transition:opacity .35s ease,transform .35s ease}
+.memory-card:hover,.memory-card:focus-within{transform:translateY(-10px);box-shadow:0 25px 55px rgba(100,30,60,.18)}
+.memory-card:hover::before,.memory-card:focus-within::before{opacity:1}
+.memory-card:hover>*,.memory-card:focus-within>*{opacity:1;transform:none}
+@media (hover:none){
+  .memory-card::before{opacity:1}
+  .memory-card>*{opacity:1;transform:none}
+}
+.memory-icon{font-size:45px;margin-bottom:15px}
+.memory-card h3{font-family:"Cormorant Garamond",serif;font-size:34px;color:#ffb3cd;margin-bottom:10px}
+.memory-card p{font-size:14px;line-height:1.7;color:#fff}
+
+/* REASONS */
+.reason-grid{width:100%;max-width:950px;margin-top:55px;display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.reason{padding:30px;border-radius:22px;text-align:left;background:rgba(255,255,255,.75);border:1px solid #f0d4df;transition:.3s}
+.reason:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(100,30,60,.1)}
+.reason h3{font-family:"Cormorant Garamond",serif;font-size:30px;color:#8a3150;margin-bottom:8px}
+.reason p{font-size:14px;line-height:1.7}
+
+/* LETTER */
+.letter-wrapper{width:100%;max-width:850px;margin-top:50px;padding:55px;border-radius:30px;background:#fff;box-shadow:0 25px 70px rgba(90,25,50,.14);text-align:left;line-height:2}
+.letter-top{font-family:"Cormorant Garamond",serif;font-size:35px;color:#8d3151;margin-bottom:25px}
+.letter-text{font-size:16px;color:#674653}
+.signature{margin-top:30px;font-family:"Cormorant Garamond",serif;font-size:32px;color:#8d3151}
+
+/* FINAL SURPRISE */
+.section.surprise-section{background:radial-gradient(circle at center,#ffe0ea,#fff7fa 60%)}
+.surprise-button{margin-top:40px;padding:17px 35px;border:none;border-radius:50px;background:#8c3150;color:#fff;font-size:16px;cursor:pointer;transition:.3s;box-shadow:0 12px 35px rgba(140,49,80,.25)}
+.surprise-button:hover{transform:translateY(-4px);background:#6e243e}
+.final-message{max-width:750px;margin-top:40px;padding:45px;border-radius:30px;background:#fff;box-shadow:0 25px 70px rgba(100,30,60,.14);opacity:0;transform:scale(.8);pointer-events:none;transition:.7s ease}
+.final-message.show{opacity:1;transform:scale(1);pointer-events:auto}
+.final-message h2{font-family:"Cormorant Garamond",serif;font-size:clamp(45px,7vw,75px);color:#8c3150}
+.final-message p{margin-top:20px;line-height:1.9;color:#674653}
+
+footer{padding:30px 20px;text-align:center;background:#45182c;color:#ffdce7;font-size:13px;line-height:1.8}
+
+@media (max-width:900px){
+  .memory-grid{grid-template-columns:repeat(2,1fr)}
+  .target{right:8%;top:36%}
+  .hero-title{font-size:clamp(55px,12vw,90px)}
+}
+@media (max-width:650px){
+  .hero{min-height:700px;background-position:62% center}
+  .small-date{font-size:10px;letter-spacing:3px}
+  .hero-title{font-size:55px}
+  .hero-name{font-size:15px;letter-spacing:5px}
+  .target{right:5%;top:29%;width:70px;height:70px;font-size:55px}
+  .shoot-button{bottom:35px;padding:14px 25px;font-size:14px}
+  .memory-grid,.reason-grid{grid-template-columns:1fr}
+  .letter-wrapper{padding:30px 22px}
+  .date-card{padding:40px 20px}
+}
+@media (max-width:420px){
+  .hero-title{font-size:48px}
+  .target{top:27%;right:3%}
+  .section{padding:80px 5%}
+}
+@media (prefers-reduced-motion:reduce){
+  .star,.confetti{animation:none}
+}
+</style>
+</head>
+<body>
+
+<section class="hero" id="home">
+  <div class="stars" id="stars"></div>
+
+  <svg class="animation-svg" id="animationSvg" viewBox="0 0 1200 700" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="bow" d="M 175 470 Q 70 350 175 230"/>
+    <path class="bow-string" d="M 175 230 L 175 350 L 175 470"/>
+    <g transform="translate(175 350)">
+      <g id="arrow" class="arrow">
+        <line class="arrow-shaft" x1="0" y1="0" x2="240" y2="0"/>
+        <polygon class="arrow-head" points="265,0 230,-14 230,14"/>
+        <polygon class="arrow-feather" points="0,0 -28,-14 -12,0 -28,14"/>
+      </g>
+    </g>
+  </svg>
+
+  <div class="target" id="target">❤️</div>
+
+  <div class="hero-content">
+    <div class="small-date">04 • OCTOBER • 2006</div>
+    <h1 class="hero-title" id="heroTitle">Happy<br>Birthday</h1>
+    <div class="hero-name" id="heroName">TAMOGHNA ❤️</div>
+  </div>
+
+  <button class="shoot-button" id="shootButton">🏹 Shoot the Arrow</button>
+  <div class="scroll-down">Scroll ↓</div>
+</section>
+
+<section class="section" id="birthday">
+  <h2 class="section-title">Your Special Day ✨</h2>
+  <p class="section-subtitle">
+    Some dates are just dates.<br>
+    And then there is this one — the day someone very special came into this world.
+  </p>
+  <div class="date-card">
+    <div class="date-number">04 • 10 • 2006</div>
+    <div class="date-text">The day My Cutiepie was born ❤️</div>
+    <p style="margin-top:25px;line-height:1.9">
+      Today isn't just another day.<br>
+      Today is a reminder of how beautiful it is that you exist.<br><br>
+      Happy Birthday, Puklu! 🎂
+    </p>
+  </div>
+</section>
+
+<section class="section" id="memories">
+  <h2 class="section-title">Little Things I Love ❤️</h2>
+  <p class="section-subtitle">Dhyann se padhna sona text thoda sa light hai. AI se likhwaye hai😁.</p>
+
+  <div class="memory-grid">
+    <div class="memory-card" tabindex="0">
+      <div class="memory-icon">🌷</div>
+      <h3>Your Smile</h3>
+      <p>The kind of smile that can instantly make an ordinary moment feel special.</p>
+    </div>
+    <div class="memory-card" tabindex="0">
+      <div class="memory-icon">✨</div>
+      <h3>Your Vibe</h3>
+      <p>There is something about you that makes every moment more memorable.</p>
+    </div>
+    <div class="memory-card" tabindex="0">
+      <div class="memory-icon">🌙</div>
+      <h3>Our Talks</h3>
+      <p>Even the most random conversations somehow become beautiful memories.</p>
+    </div>
+    <div class="memory-card" tabindex="0">
+      <div class="memory-icon">🫶</div>
+      <h3>Your Heart</h3>
+      <p>Your kindness and the little things you do mean more than you probably realize.</p>
+    </div>
+    <div class="memory-card" tabindex="0">
+      <div class="memory-icon">📸</div>
+      <h3>Our Memories</h3>
+      <p>Every little moment becomes another page in a story worth remembering.</p>
+    </div>
+    <div class="memory-card" tabindex="0">
+      <div class="memory-icon">💗</div>
+      <h3>Simply You</h3>
+      <p>No special reason needed.<br>You being you is enough.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reasons">
+  <h2 class="section-title">Why You're Special 💕</h2>
+  <p class="section-subtitle">A few words for someone who deserves many more.</p>
+  <div class="reason-grid">
+    <div class="reason"><h3>🌸 Your Chatpataness</h3><p>Your Chatpata harkat makes me more happy.</p></div>
+    <div class="reason"><h3>💫 Your Kindness</h3><p>The little things you do can mean much more than you realize.</p></div>
+    <div class="reason"><h3>🎀 Your Gussa</h3><p>My favorite part is when I rage-bait you and you actually get mad. 😂❤️</p></div>
+    <div class="reason"><h3>❤️ Your Smile</h3><p>One of those tiny things that can instantly make my day better.</p></div>
+  </div>
+</section>
+
+<section class="section" id="letter">
+  <h2 class="section-title">A Letter For You 💌</h2>
+  <div class="letter-wrapper">
+    <div class="letter-top">Dear Baby,</div>
+    <div class="letter-text">
+      Happy Birthday! ❤️<br>
+      I wanted to make something a little different for your birthday. Something that isn't just a normal birthday message.<br>
+      So I made this little corner of the internet especially for you.<br><br>
+      When we first met, you came wearing a white kurti and jeans. At that time, I thought, “She looks so simple and innocent.” But when I got to see your chatpata side, your little crazy habits, and especially your gussa, I somehow fell even more in love with you. ❤️
+      <br><br>
+      It has been 6 months and 2 days since we started our relationship, and honestly, I want to spend my whole life with you. I never imagined that I would end up loving you this much.
+      <br><br>
+      You have almost every quality that I could ever want in a perfect girl — maturity, love, care, kindness, beautiful, understanding (thoda kam 😂), and so much more. I could keep writing about all the things I love about you, but the page would end before my words ever do.
+      <br><br>
+      Last thing, baby…<br>
+      I LOVE YOU. ❤️
+      <br><br>
+      I hope you achieve the things you dream about and always remember how special you are.<br>
+      Keep smiling. Keep being yourself. And keep making the world a little brighter just by being in it.
+    </div>
+    <div class="signature">With lots of love, Shubham❤️</div>
+  </div>
+</section>
+
+<section class="section surprise-section" id="surprise">
+  <h2 class="section-title">One Last Surprise 🎁</h2>
+  <p class="section-subtitle">You've reached the end...<br>but there's still one thing left.</p>
+  <button class="surprise-button" id="surpriseButton">Open My Final Message ❤️</button>
+  <div class="final-message" id="finalMessage">
+    <h2>Happy Birthday, Tamoghna! 🎂❤️</h2>
+    <p>
+      May this year bring you countless beautiful moments.<br><br>
+      May you laugh louder, dream bigger, travel farther, and find happiness in the smallest things.
+      Aise hi humesha rehna mere sath baby❤️.<br><br>
+      Today is your day.<br>
+      Enjoy every second of it. ❤️
+    </p>
+  </div>
+</section>
+
+<footer>
+  Made especially for Tamoghna by one Handsome boy ❤️<br>
+  04 • 10 • 2006
+</footer>
+
+<script>
+const arrow = document.getElementById("arrow");
+const svg = document.getElementById("animationSvg");
+const target = document.getElementById("target");
+const shootButton = document.getElementById("shootButton");
+const heroTitle = document.getElementById("heroTitle");
+const heroName = document.getElementById("heroName");
+const surpriseButton = document.getElementById("surpriseButton");
+const finalMessage = document.getElementById("finalMessage");
+const stars = document.getElementById("stars");
+
+/* Stars */
+for (let i = 0; i < 90; i++) {
+  const s = document.createElement("div");
+  s.className = "star";
+  s.style.left = Math.random() * 100 + "%";
+  s.style.top = Math.random() * 100 + "%";
+  s.style.animationDelay = Math.random() * 3 + "s";
+  s.style.animationDuration = 1 + Math.random() * 3 + "s";
+  stars.appendChild(s);
+}
+
+/* Aim the arrow so its TIP lands on the heart */
+const START_X = 175, START_Y = 350, TIP = 265;
+
+function calculateArrowPosition() {
+  const svgRect = svg.getBoundingClientRect();
+  const t = target.getBoundingClientRect();
+  const tx = ((t.left + t.width / 2) - svgRect.left) * (1200 / svgRect.width);
+  const ty = ((t.top + t.height / 2) - svgRect.top) * (700 / svgRect.height);
+  const dx = tx - START_X;
+  const dy = ty - START_Y;
+  const rad = Math.atan2(dy, dx);
+
+  arrow.style.setProperty("--arrow-x", (dx - Math.cos(rad) * TIP) + "px");
+  arrow.style.setProperty("--arrow-y", (dy - Math.sin(rad) * TIP) + "px");
+  arrow.style.setProperty("--arrow-angle", (rad * 180 / Math.PI) + "deg");
+}
+
+shootButton.addEventListener("click", () => {
+  calculateArrowPosition();
+
+  arrow.classList.remove("shooting");
+  target.classList.remove("hit");
+  heroTitle.classList.remove("show");
+  heroName.classList.remove("show");
+  void arrow.getBoundingClientRect(); // restart animation
+  arrow.classList.add("shooting");
+  shootButton.disabled = true;
+
+  setTimeout(() => {
+    target.classList.add("hit");
+    createSparkles();
+    setTimeout(() => {
+      heroTitle.classList.add("show");
+      heroName.classList.add("show");
+      createConfetti();
+    }, 250);
+    setTimeout(() => { shootButton.disabled = false; }, 1200);
+  }, 1300);
+});
+
+function createSparkles() {
+  const r = target.getBoundingClientRect();
+  const cx = r.left + r.width / 2;
+  const cy = r.top + r.height / 2;
+  for (let i = 0; i < 45; i++) {
+    const sp = document.createElement("div");
+    sp.className = "sparkle";
+    sp.style.left = cx + "px";
+    sp.style.top = cy + "px";
+    sp.style.setProperty("--x", (Math.random() - 0.5) * 350 + "px");
+    sp.style.setProperty("--y", (Math.random() - 0.5) * 300 + "px");
+    document.body.appendChild(sp);
+    setTimeout(() => sp.remove(), 1600);
+  }
+}
+
+function createConfetti() {
+  const colors = ["#ff5d88", "#ffd18c", "#ffffff", "#ff9db8", "#c88bff"];
+  for (let i = 0; i < 80; i++) {
+    const c = document.createElement("div");
+    c.className = "confetti";
+    c.style.left = Math.random() * 100 + "vw";
+    c.style.background = colors[Math.floor(Math.random() * colors.length)];
+    c.style.setProperty("--duration", 2 + Math.random() * 3 + "s");
+    document.body.appendChild(c);
+    setTimeout(() => c.remove(), 5500);
+  }
+}
+
+surpriseButton.addEventListener("click", () => {
+  finalMessage.classList.add("show");
+  surpriseButton.style.display = "none";
+  createConfetti();
+});
+
+window.addEventListener("resize", () => {
+  if (!arrow.classList.contains("shooting")) calculateArrowPosition();
+});
+calculateArrowPosition();
+</script>
+</body>
+</html>
